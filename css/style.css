@@ -1,0 +1,92 @@
+@import 'fonts.css';
+
+body{
+  
+   
+   height: 2000;
+   font-family: 'OpenSans-Semibold';
+}
+.menu-bar{
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
+.container{
+   display:flex;
+
+}
+.menu__spisok{
+   display: flex;
+   
+   text-align: center;
+   padding-top: 20px;
+}
+.logo{
+   padding-left: 100px;
+   width: 170px;
+   height: 120px;
+}
+.menu__item{
+   list-style-type: none;
+   
+}
+.menu__item a{
+  
+   color:black ;
+   padding-left: 35px;
+   font-size: 25px;
+   justify-content: space-between;
+   text-align: center;
+   text-decoration: none;
+
+}
+
+   
+   
+   
+
+.header{
+   background-color:gray;
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
+.header{
+   background-image: url('/img/hederOne.jpg');
+   width: 1200px;
+   height: 600px;
+   background-size:cover;
+   background-position:bottom;
+   background-repeat: no-repeat;
+}
+
+
+.header__text{
+   padding-left: 800px;
+color:rgb(255, 255, 255);
+font-size: 25px;
+font-weight: 100;
+text-align: start ;
+
+  padding-top: 180px;
+   padding-bottom: 250px;
+   position: relative;
+   bottom: -110px;
+   left:-50px;
+   
+
+max-width: 430px;
+width: 100%;
+
+}
+.menu__nav{
+   padding-left: 160px;
+}
+.header__item{
+   font-weight: 900;
+   font-size: 39px;
+   color:white;
+   position: relative;
+   bottom: -280px;
+   left:690px;
+}

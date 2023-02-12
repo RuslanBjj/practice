@@ -1,17 +1,22 @@
 @import 'fonts.css';
 
 body{
-  
+
    
    height: 2000;
    font-family: 'OpenSans-Semibold';
 }
 .menu-bar{
+   background-color:white;
    max-width: 1200px;
    width: 100%;
    margin: 0 auto;
+   
+  
+   width: 100%;
+   margin: 0 auto;
 }
-.container{
+.menu-bar>.container{
    display:flex;
 
 }
@@ -40,53 +45,81 @@ body{
    text-decoration: none;
 
 }
-
-   
-   
-   
-
+.menu__nav{
+   padding-left: 160px;
+}
+/* HEADER */
 .header{
-   background-color:gray;
    max-width: 1200px;
    width: 100%;
    margin: 0 auto;
 }
-.header{
-   background-image: url('/img/hederOne.jpg');
-   width: 1200px;
-   height: 600px;
+.header>.container {
+   max-height: 900px;
+   height: 100%;
+   background-image:url('/img/big.jpg');
    background-size:cover;
-   background-position:bottom;
-   background-repeat: no-repeat;
+   background-position:center center;
 }
-
-
-.header__text{
-   padding-left: 800px;
-color:rgb(255, 255, 255);
-font-size: 25px;
-font-weight: 100;
-text-align: start ;
-
-  padding-top: 180px;
-   padding-bottom: 250px;
-   position: relative;
-   bottom: -110px;
-   left:-50px;
-   
-
-max-width: 430px;
-width: 100%;
-
-}
-.menu__nav{
-   padding-left: 160px;
-}
-.header__item{
-   font-weight: 900;
-   font-size: 39px;
+.header__row{
+   padding-top: 130px;
+   padding-bottom: 180px;
+   padding-left: 30px;
+   text-align: start;
    color:white;
    position: relative;
-   bottom: -280px;
-   left:690px;
+   bottom: -100px;
+
+
+}
+.header__text {
+   font-size: 25px;  
+}
+.header__button{
+   font-size: 17px;
+   padding: 15px 20px;
+   border:2px solid rgb(27, 157, 150);
+   background-color:rgb(27, 157, 150);
+}
+.header__button:hover{
+   border:2px solid rgb(6, 87, 83);
+   background-color:rgb(6, 87, 83);
+}
+
+
+
+
+
+
+/* Tabs */
+.tabs_section{
+   padding-top: 60px;
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+}
+.img_jun{
+   width: 700px;
+   height: 400px;
+   border-radius: 5%;
+}
+.tabs_section>.container{
+   padding-top: 70px;
+   display: flex;
+}
+.tabs__list{
+   display: flex;
+}
+.tabs__h1{
+   text-align: center   ;
+   font-size: 37px;
+}
+.tabs__text_p{
+   font-size: 24px;
+}
+.tabs__list__item{
+   font-size: 30px;
+   padding-left: 110px;
+   list-style-type: none;
+   
 }

@@ -123,3 +123,6 @@ body{
    list-style-type: none;
    
 }
+.tabs__list__item:hover{
+   color:rgb(15, 148, 61);
+}

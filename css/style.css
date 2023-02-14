@@ -1,15 +1,18 @@
 @import 'fonts.css';
 
 body{
-
-   
+   padding: 0px 0px;
+   margin: 0px 0px;
+   background-image:url('/img/fon.jpg');
    height: 2000;
    font-family: 'OpenSans-Semibold';
+   color:rgb(0, 0, 0);
 }
 .menu-bar{
+
    background-color:white;
-   max-width: 1200px;
-   width: 100%;
+   max-width: 100%;
+   
    margin: 0 auto;
    
   
@@ -18,6 +21,7 @@ body{
 }
 .menu-bar>.container{
    display:flex;
+   justify-content: center;
 
 }
 .menu__spisok{
@@ -33,6 +37,7 @@ body{
 }
 .menu__item{
    list-style-type: none;
+   padding-top: 10px;
    
 }
 .menu__item a{
@@ -65,7 +70,7 @@ body{
    padding-top: 130px;
    padding-bottom: 180px;
    padding-left: 30px;
-   text-align: start;
+   text-align: justify;
    color:white;
    position: relative;
    bottom: -100px;
@@ -116,6 +121,8 @@ body{
 }
 .tabs__text_p{
    font-size: 24px;
+   text-align: justify;
+   padding-right: 50px;
 }
 .tabs__list__item{
    font-size: 30px;
@@ -125,4 +132,56 @@ body{
 }
 .tabs__list__item:hover{
    color:rgb(15, 148, 61);
+}
+
+/* SLAIDER */
+
+
+.slaider{
+
+max-width: 1200px;
+width: 100%;
+margin: 0px auto;
+padding-bottom: 100px;
+}
+.slaider>.container{
+display: flex;
+}
+.slaider_card{
+max-width: 700px;
+width: 100%;
+}
+.slaider_card_img{
+   width: 700px;
+   height: 450px;
+   border-radius:10%
+}
+.slaider__title{
+   padding-left: 160px;
+   text-align: start;
+   font-size: 40px;
+  padding-top: 50px;
+}
+
+.left-arrow{
+   padding-top: 175px;
+   width: 50px;
+   height: 80px;
+}
+.righte-arrow{
+   padding-top: 175px;
+ 
+   width: 50px;
+   height: 80px;
+}
+.about_board_text{
+   padding-left: 40px;
+   max-width: 350px;
+   width: 100%;
+   font-size: 23px;
+   text-align: justify;
+}
+.about_board_header{
+   padding-left: 130px;
+   font-size: 35px;
 }

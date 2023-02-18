@@ -63,4 +63,90 @@ plusSlaid(-1);
         plusSlaid(+1);
       });
     //   --------------------------
+//  FORMA
+
+
+const spaceSerf = [
+'Los Angeles',
+'Vladivostok',
+'Bali',
+'Taiti',
+'Portugal'
+];
+
+const knopka = document.querySelector('.form_button');
+const addInput = document.querySelector('.add__input');
+const spisokMest = document.querySelector('.forma_list_lil');
+
+
+
+function showSpisok (){
+    spisokMest.innerHTML="";
+    spaceSerf.forEach((item)=>{
+        spisokMest.innerHTML +=`  <li class="forma__list_item"><div class=" list__item">${item}  <img src="/img/delete.png" alt="basket_delete" class="delete"> </div></li>`;
+            });
+            document.querySelectorAll('.delete').forEach((item,i)=>{
+                item.addEventListener('click',(e)=>{
+                    if(e.target===item){item.parentElement.parentElement.remove();
+                   spaceSerf.pop();
+            
+           
+                    }
+                    
+                });
+            });
+}
+knopka.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const newPlace = addInput.value;
+    spaceSerf.push(newPlace);
+    spaceSerf.sort();
+   showSpisok();
+});
+
+showSpisok();
+
+// Timer
+
+const finishDate = '2023-02-23';
+
+function getFinishDate(date){
+    const t = Date.parse(date) - Date.parse(new Date()),
  
+    day = Math.floor( (t/(1000*60*60*24)) ),
+    hour = Math.floor( (t/(1000*60*60)%24) ),
+    minute = Math.floor( (t/1000/60) % 60 ),
+    second = Math.floor( (t/1000) % 60 );
+   
+  
+    return {
+        'total':t,
+        'days':day,
+        'hours':hour,
+        'minutes':minute,
+        'seconds':second
+    };
+}
+
+function setTimer(){
+    let dayss = document.querySelector('#days'),
+    hourss = document.querySelector('#hours'),
+    minutess = document.querySelector('#minutes'),
+    secondss = document.querySelector('#seconds');
+
+    function updateTimer(){
+        let t = getFinishDate(finishDate);
+        dayss.innerHTML=t.days;
+        hourss.innerHTML=t.hours;
+        minutess.innerHTML=t.minutes;
+        secondss.innerHTML=t.seconds;
+    }
+    const interval = setInterval(()=>{
+getFinishDate();
+updateTimer();
+    },1000);
+}
+setTimer();
+
+
+
